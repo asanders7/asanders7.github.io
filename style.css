@@ -12,10 +12,11 @@
     border-radius: 8px;
     overflow: hidden;
     position: fixed;
+    width: 98.9%;
 }
 #aboutMeBtn,
-#projectBtn,
 #contactBtn,
+#socialMediaBtn,
 #project-dropdown-button {
     background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
     /* border: none; */
@@ -24,14 +25,15 @@
     float: left;
     font-size: 17px;
     font-weight: bolder;
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 14px 28px;
+    margin-right: 150px;
+    padding: 14px 40px;
+    position: relative;
     text-align: center;
 }
 #aboutMeBtn:hover,
 #projectBtn:hover,
 #contactBtn:hover,
+#socialMediaBtn:hover,
 #project-dropdown-button:hover,
 .picky-eater-btn:hover,
 .space-kidet-btn:hover,
@@ -44,12 +46,13 @@
     /* position: relative; */
     /* display: inline-block; */
     /* border: none; */
-    float: left;
-    overflow: hidden;
+    float: right;
+    margin-right: 20%;
+    /* overflow: hidden; */
 }
 .project-dropdown-menu #project-dropdown-button {
     border: none;
-    padding: 14px 28px;
+    padding: 14px 40px;
     margin: 0;
     outline: none;
 }
@@ -66,13 +69,13 @@
 .donut-clicker-btn,
 .virtual-pet-shelter-btn {
     /* float: none; */
-    padding: 14px 28px;
+    padding: 14px;
     position: relative;
     z-index: 1;
     display: block;
-    text-align: left;
-
-    background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+    text-align: center;
+    width: 150px;
+    background-image: linear-gradient(to right top, #3498db 0%, #8e44ad 100%);
     /* border: none; */
     color: white;
     /* display: block; */
@@ -117,26 +120,27 @@
     display: none;
 } */
 header {
-    align-items: center;
-    background-color: rgb(209, 187, 202);
-    border-radius: 8px;
-    margin: auto;
     padding: 70px;
 }
 .main-title {
+    border-radius: 8px;
+    font-size: 40px;
+    margin-left: 35%;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -19px -2px 11px 15px rgba(166,27,255,0); 
+        box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -19px -2px 11px 15px rgba(166,27,255,0);
     text-align: center;
+    width: 30%;
 }
 .grid-container {
     display: grid;
-    grid-gap: 60px;
     grid-template-columns: 1fr 1fr;
     height: auto;
     width: auto;
 }
 .alicia-photo {
+    background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
     border-radius: 8px;
     box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
-    margin-top: 30px;
     padding: 15px;
     width: 40%;
     -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
