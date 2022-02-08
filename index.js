@@ -1,17 +1,17 @@
 import PickyEaterPage from './PickyEaterPage.js';
 import SpaceKIDetPage from './SpaceKIDetPage.js';
 
-responsiveFunction();
+// responsiveFunction();
 
-function responsiveFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "nav-bar") {
-        x.className += "responsive";
-    }
-    else {
-        x.className = "nav-bar";
-    }
-}
+// function responsiveFunction() {
+//     var x = document.getElementById("myNav");
+//     if (x.className === "nav-bar") {
+//         x.className += "responsive";
+//     }
+//     else {
+//         x.className = "nav-bar";
+//     }
+// }
 
 const aboutMeModal = document.getElementById("about-me-paragraph");
 const aboutMeButton = document.getElementById("aboutMeBtn");
