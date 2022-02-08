@@ -1,17 +1,19 @@
 .container {
     background-color:rgb(217, 206, 240);
     border-radius: 8px;
+    font-family: Arial;
     margin: auto;
     padding: 20px;
-    width: 90%;
+    width: 100%;
 }
 .nav-bar {
     background-color: #333;
     border-radius: 8px;
+    margin-top: 20px;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 89%;
+    width: 100%;
 }
 nav a {
     float: left;
@@ -25,6 +27,7 @@ header {
     align-items: center;
     background-color:rgb(209, 187, 202);
     border-radius: 8px;
+    margin-top: 40px;
     padding: 20px;
 }
 .main-title {
@@ -35,7 +38,7 @@ nav button {
     border-radius: 8px;
     color:black;
     font-size: 16px;
-    padding: 4px;
+    padding: 10px;
 }
 nav button:hover {
     background-color: #888;
@@ -43,7 +46,7 @@ nav button:hover {
 }
 .grid-container {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 60px;
     grid-template-columns: 1fr 1fr;
     height: auto;
     width: auto;
@@ -53,7 +56,7 @@ nav button:hover {
     box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
     margin-top: 30px;
     padding: 15px;
-    width: 35%;
+    width: 40%;
     -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
 }
@@ -61,8 +64,8 @@ img {
     height: auto;
 }
 .photo {
-    margin-left: 100px;
-    margin-top: 10px;
+    margin-left: 30%;
+    margin-top: 20px;
 }
 section {
     background-color:rgb(209, 187, 202);
@@ -73,15 +76,29 @@ section {
     margin-top: 60px;
     text-align: center;
 }
-.about-me-paragraph {
+.about-me-popup {
     background-color:rgb(240, 235, 228);
     border-radius: 8px;
-    margin-right: 100px;
-    margin-top: 40px;
+    display: none;
+    height: auto;
+    left: 50%;
+    overflow: auto;
     padding: 20px;
+    position: absolute;
+    top: 50%;
     -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
-    width: 75%;
+    width: 40%;
     -moz-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+.close {
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: palevioletred;
+    cursor: pointer;
 }
 .contact-block {
     background-color:rgb(240, 235, 228);
@@ -122,8 +139,9 @@ section {
 .skills-block {
     background-color:rgb(240, 235, 228);
     border-radius: 8px;
-    margin-left: 185px;
-    margin-top: 80px;
+    height: auto;
+    margin-right: 20%;
+    margin-top: 40px;
     padding: 10px;
     -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
     width: 70%;
@@ -144,6 +162,40 @@ section {
 .projects {
     margin-top: 60px;
     text-align: center;
+}
+.project-dropdown-button {
+    background-color: rgb(94, 11, 94);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.project-dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+.project-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(192, 167, 241);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.picky-eater-btn, .space-kidet-btn, .trekking-app-btn, .donut-clicker-btn, .virtual-pet-shelter-btn {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.picky-eater-btn:hover, .space-kidet-btn:hover, .trekking-app-btn:hover, .donut-clicker-btn:hover, .virtual-pet-shelter-btn:hover {
+    background-color:salmon;
+}
+.project-dropdown-menu:hover .project-dropdown-content {
+    display:block;
+}
+.project-dropdown-menu:hover .project-dropdown-button {
+    background-color:rgb(219, 163, 219);
 }
 article {
     background-color:rgb(240, 235, 228);
@@ -200,4 +252,17 @@ article {
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    
+}
+.picky-eater-app-image {
+    border: 1px solid black;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-top: 50px;
+    width: auto;
+}
+.image-card {
+    background-color: rgb(223, 76, 161);
 }

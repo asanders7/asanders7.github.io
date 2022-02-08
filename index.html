@@ -5,39 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <title>Alicia's Portfolio</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1 class="main-title">Alicia Sanders</h1>
-        </header>
         <nav class="nav-bar">
-            <a href="#about-me-section"><button>About Me</button></a>
+            <button id="aboutMeBtn">About Me</button>            <div class="project-dropdown-menu">
             <a href="#project-section"><button>Projects</button></a>
             <a href="#contact-section"><button>Contact</button></a>
         </nav>
+        <header>
+            <h1 class="main-title">Alicia Sanders</h1>
+        </header>
         <main>
-            <section id="about-me-section">
-                <h2 class="about-me">About Me</h2>
-                <div class="grid-container">
-                    <div class="photo">
-                        <img
-                            class="alicia-photo"
-                            src="images\Alicia Photo.jpg"
-                            alt="alicia"
-                        />
-                    </div>
-                    <div class="about-me-paragraph">
-                        <p>Welcome. I have always had a passion for helping people and for working with computers.
-                        My passion for people led me to pursue a Bachelor's degree in Psychology from The Ohio State University.
-                        After graduation, I developed an interest in coding and ended up completing courses in Software Development.
-                        Most recently, I joined the We Can Code IT coding bootcamp. This program teaches both
-                        back-end and front-end development using IntelliJ and Visual Studio Code as the main environments.
-                        The coding languages that the program focuses on are Java, HTML, CSS, and JavaScript. I find coding to be
-                        very rewarding since it gives me the ability to create programs that have the potential to make the lives
-                        of other people easier. I am excited to start a career in Software Development.</p>
-                    </div>
+            <div class="grid-container">
+                <div class="photo">
+                    <img
+                        class="alicia-photo"
+                        src="images\Alicia Photo.jpg"
+                        alt="alicia"
+                    />
                 </div>
                 <div class="skills-block">
                     <h3 class="skills-list">Technical Skills</h5>
@@ -61,7 +48,31 @@
                         <li>&bull;GitBash</li>
                     </ul>
                 </div>
-            </section>
+            </div>
+            <div id="about-me-paragraph" class="about-me-popup">
+                <span class="close">&times;</span>
+                <p>Welcome. I have always had a passion for helping people and for working with computers.
+                    My passion for people led me to pursue a Bachelor's degree in Psychology from The Ohio State University.
+                    After graduation, I developed an interest in coding and ended up completing courses in Software Development.
+                    Most recently, I joined the We Can Code IT coding bootcamp. This program teaches both
+                    back-end and front-end development using IntelliJ and Visual Studio Code as the main environments.
+                    The coding languages that the program focuses on are Java, HTML, CSS, and JavaScript. I find coding to be
+                    very rewarding since it gives me the ability to create programs that have the potential to make the lives
+                    of other people easier. I am excited to start a career in Software Development.</p>
+            </div>
+            <div class="project-dropdown-menu">
+                <button class="project-dropdown-button">Projects</button>
+                <div class="project-dropdown-content">
+                    <div class="picky-eater-btn">Picky Eater</div>
+                    <div class="space-kidet-btn">Space KIDet</div>
+                    <div class="trekking-app-btn">Trekking App</div>
+                    <div class="donut-clicker-btn">Donut Clicker</div>
+                    <div class="virtual-pet-shelter-btn">Virtual Pet Shelter</div>
+                </div>
+            </div>
+            <div id="app">
+
+            </div>
             <section id="project-section">
                 <h2 class="projects">Projects</h2>
                 <div class="grid-container-3">
@@ -157,5 +168,6 @@
             <small>Alicia Sanders 2021</small>
         </footer>
     </div>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
