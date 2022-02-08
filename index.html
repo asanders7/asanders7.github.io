@@ -8,12 +8,25 @@
     <title>Alicia's Portfolio</title>
 </head>
 <body>
+    <nav class="nav-bar" id="myNav">
+        <a><button id="aboutMeBtn">About Me</button></a>
+        <div class="project-dropdown-menu">
+            <a><button id="project-dropdown-button">Projects
+                <i class="fa fa-caret-down"></i>
+            </button></a>
+            <div class="project-dropdown-content">
+                <a><button class="picky-eater-btn">Picky Eater</button></a>
+                <a><button class="space-kidet-btn">Space KIDet</button></a>
+                <a><button class="trekking-app-btn">Trekking App</button></a>
+                <a><button class="donut-clicker-btn">Donut Clicker</button></a>
+                <a><button class="virtual-pet-shelter-btn">Virtual Pet Shelter</button></a>
+            </div>
+        </div>
+        <a><button id="projectBtn">Projects</button></a>
+        <a><button id ="contactBtn">Contact</button></a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveFunction()">&#9776;</a>
+    </nav>
     <div class="container">
-        <nav class="nav-bar">
-            <button id="aboutMeBtn">About Me</button>            <div class="project-dropdown-menu">
-            <a href="#project-section"><button>Projects</button></a>
-            <a href="#contact-section"><button>Contact</button></a>
-        </nav>
         <header>
             <h1 class="main-title">Alicia Sanders</h1>
         </header>
@@ -60,19 +73,7 @@
                     very rewarding since it gives me the ability to create programs that have the potential to make the lives
                     of other people easier. I am excited to start a career in Software Development.</p>
             </div>
-            <div class="project-dropdown-menu">
-                <button class="project-dropdown-button">Projects</button>
-                <div class="project-dropdown-content">
-                    <div class="picky-eater-btn">Picky Eater</div>
-                    <div class="space-kidet-btn">Space KIDet</div>
-                    <div class="trekking-app-btn">Trekking App</div>
-                    <div class="donut-clicker-btn">Donut Clicker</div>
-                    <div class="virtual-pet-shelter-btn">Virtual Pet Shelter</div>
-                </div>
-            </div>
-            <div id="app">
-
-            </div>
+            <div id="app"></div>
             <section id="project-section">
                 <h2 class="projects">Projects</h2>
                 <div class="grid-container-3">

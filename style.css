@@ -1,5 +1,5 @@
 .container {
-    background-color:rgb(217, 206, 240);
+    background-color: rgb(217, 206, 240);
     border-radius: 8px;
     font-family: Arial;
     margin: auto;
@@ -9,40 +9,101 @@
 .nav-bar {
     background-color: #333;
     border-radius: 8px;
-    margin-top: 20px;
     overflow: hidden;
     position: fixed;
-    top: 0;
     width: 100%;
 }
-nav a {
+#aboutMeBtn,
+#projectBtn,
+#contactBtn,
+#project-dropdown-button,
+.picky-eater-btn,
+.space-kidet-btn,
+.trekking-app-btn,
+.donut-clicker-btn,
+.virtual-pet-shelter-btn {
+    background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
     float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
     font-size: 17px;
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 14px 28px;
+    text-align: center;
+}
+#aboutMeBtn:hover,
+#projectBtn:hover,
+#contactBtn:hover,
+#project-dropdown-button:hover,
+.picky-eater-btn:hover,
+.space-kidet-btn:hover,
+.trekking-app-btn:hover,
+.donut-clicker-btn:hover,
+.virtual-pet-shelter-btn:hover {
+    color: rgb(223, 76, 161);
+}
+.project-dropdown-menu {
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+.project-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.project-dropdown-menu:hover .project-dropdown-content {
+    display: block;
+}
+/* .project-dropdown-menu:hover .project-dropdown-button {
+    background-color: rgb(219, 163, 219);
+} */
+@media screen and (max-width: 600px) {
+    .nav-bar a:not(:first-child), .project-dropdown-menu .project-dropdown-button {
+        display: none;
+    }
+    .nav-bar a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-bar.responsive {position:relative;}
+    .nav-bar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-bar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .nav-bar.responsive .project-dropdown-menu {float: none;}
+    .nav-bar.responsive .project-dropdown-content {position: relative;}
+    .nav-bar.responsive .project-dropdown-menu #project-dropdown-button {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+}
+.nav-bar .icon {
+    display: none;
 }
 header {
     align-items: center;
-    background-color:rgb(209, 187, 202);
+    background-color: rgb(209, 187, 202);
     border-radius: 8px;
     margin-top: 40px;
     padding: 20px;
 }
 .main-title {
     text-align: center;
-}
-nav button {
-    background-color:rgb(192, 167, 241);
-    border-radius: 8px;
-    color:black;
-    font-size: 16px;
-    padding: 10px;
-}
-nav button:hover {
-    background-color: #888;
-    transition: 0.5s;
 }
 .grid-container {
     display: grid;
@@ -68,7 +129,7 @@ img {
     margin-top: 20px;
 }
 section {
-    background-color:rgb(209, 187, 202);
+    background-color: rgb(209, 187, 202);
     border-radius: 8px;
     margin-top: 60px;
 }
@@ -77,7 +138,7 @@ section {
     text-align: center;
 }
 .about-me-popup {
-    background-color:rgb(240, 235, 228);
+    background-color: rgb(240, 235, 228);
     border-radius: 8px;
     display: none;
     height: auto;
@@ -96,12 +157,13 @@ section {
     font-size: 50px;
     font-weight: bold;
 }
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: palevioletred;
     cursor: pointer;
 }
 .contact-block {
-    background-color:rgb(240, 235, 228);
+    background-color: rgb(240, 235, 228);
     border-radius: 8px;
     margin-top: 20px;
     padding: 20px;
@@ -116,7 +178,7 @@ section {
     width: 10%;
 }
 .social-media-block {
-    background-color:rgb(240, 235, 228);
+    background-color: rgb(240, 235, 228);
     border-radius: 8px;
     margin-top: 20px;
     padding: 20px;
@@ -137,7 +199,7 @@ section {
     width: 30%;
 }
 .skills-block {
-    background-color:rgb(240, 235, 228);
+    background-color: rgb(240, 235, 228);
     border-radius: 8px;
     height: auto;
     margin-right: 20%;
@@ -163,42 +225,8 @@ section {
     margin-top: 60px;
     text-align: center;
 }
-.project-dropdown-button {
-    background-color: rgb(94, 11, 94);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.project-dropdown-menu {
-    position: relative;
-    display: inline-block;
-}
-.project-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:rgb(192, 167, 241);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.picky-eater-btn, .space-kidet-btn, .trekking-app-btn, .donut-clicker-btn, .virtual-pet-shelter-btn {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.picky-eater-btn:hover, .space-kidet-btn:hover, .trekking-app-btn:hover, .donut-clicker-btn:hover, .virtual-pet-shelter-btn:hover {
-    background-color:salmon;
-}
-.project-dropdown-menu:hover .project-dropdown-content {
-    display:block;
-}
-.project-dropdown-menu:hover .project-dropdown-button {
-    background-color:rgb(219, 163, 219);
-}
 article {
-    background-color:rgb(240, 235, 228);
+    background-color: rgb(240, 235, 228);
     border-radius: 8px;
     margin-top: 20px;
     padding: 10px;
@@ -213,7 +241,6 @@ article {
     -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
 }
-
 .virtual-pet-shelter-photo {
     border-radius: 8px;
     box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
@@ -252,17 +279,38 @@ article {
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
-    
 }
-.picky-eater-app-image {
+.app-image {
     border: 1px solid black;
-    height: 500px;
+    height: 600px;
     margin: auto;
-    margin-bottom: 50px;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-top: 5px;
+}
+.app-image-space-1, .app-image-space-2 {
+    border: 1px solid black;
+    height: 600px;
+    margin: auto;
+    margin-left: 5%;
     margin-top: 50px;
-    width: auto;
 }
 .image-card {
-    background-color: rgb(223, 76, 161);
+    background-color: black;
+    border-radius: 8px;
+}
+.space-image-card {
+    background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+    border-radius: 8px;
+}
+.grid-container-for-image-cards {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+.app-description {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 10px;
 }
