@@ -6,6 +6,9 @@
     margin: auto;
     width: 100%;
 }
+#app {
+    background-color: rgb(226, 211, 223);
+}
 .nav-bar {
     background-color: #333;
     border-radius: 8px;
@@ -62,7 +65,7 @@
 .project-dropdown-content {
     display: none;
     /* position: relative; */
-    min-width: 160px;
+    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     /* z-index: 1; */
 }
@@ -72,9 +75,9 @@
 .donut-clicker-btn,
 .virtual-pet-shelter-btn {
     /* float: none; */
-    padding: 14px;
-    position: relative;
-    z-index: 1;
+    padding: 14px 28px;
+    /* position: relative; */
+    /* z-index: 1; */
     display: block;
     text-align: center;
     width: 150px;
@@ -170,17 +173,47 @@ section {
     border-radius: 8px;
     display: none;
     height: auto;
-    left: 50%;
+    left: 25%;
     overflow: auto;
     padding: 20px;
     position: absolute;
-    top: 50%;
+    top: 25%;
     -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
     width: 40%;
     -moz-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
     z-index: 1;
 }
-.close {
+.social-media-popup {
+    background-color: rgb(221, 73, 177);
+    border-radius: 8px;
+    display: none;
+    height: auto;
+    left: 25%;
+    overflow: auto;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
+    width: 40%;
+    -moz-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+.contact-me-popup {
+    background-color: rgb(221, 73, 177);
+    border-radius: 8px;
+    display: none;
+    height: auto;
+    left: 35%;
+    overflow: auto;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
+    width: 25%;
+    -moz-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+.close, .close2 {
     float: right;
     font-size: 50px;
     font-weight: bold;
@@ -189,7 +222,12 @@ section {
 .close:focus {
     color: palevioletred;
     cursor: pointer;
+}.close2:hover,
+.close2:focus {
+    color: palevioletred;
+    cursor: pointer;
 }
+
 .contact-block {
     background-color: rgb(240, 235, 228);
     border-radius: 8px;
@@ -313,7 +351,14 @@ article {
     height: 600px;
     margin: auto;
     margin-left: 15%;
-    margin-top: 5px;
+    margin-top: 50px;
+}
+.app-image-donut {
+    border: 1px solid black;
+    height: 550px;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .app-image-space-1, .app-image-space-2 {
     border: 1px solid black;
@@ -322,9 +367,25 @@ article {
     margin-left: 5%;
     margin-top: 50px;
 }
+.pet-app-image {
+    border: 1px solid black;
+    height: 600px;
+    margin: auto;
+    margin-top: 5px;
+}
+.skills-used {
+    color: white;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
 .image-card {
+    border-radius: 8px;
+}
+.picky-eater-image-card {
     background-color: black;
     border-radius: 8px;
+    margin-top: 50px;
 }
 .space-image-card {
     background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
@@ -337,8 +398,15 @@ article {
     padding: 10px;
 }
 .app-description {
-    color: white;
+    color: rgb(44, 26, 41);
     font-size: 20px;
     margin-left: 20px;
     padding: 10px;
+}
+.app-title {
+    color: rgb(231, 50, 171);
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 150px;
+    text-align: center;
 }

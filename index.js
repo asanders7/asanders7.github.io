@@ -1,5 +1,8 @@
 import PickyEaterPage from './PickyEaterPage.js';
 import SpaceKIDetPage from './SpaceKIDetPage.js';
+import DonutClickerPage from './DonutClickerPage.js';
+import TrekkingPage from './TrekkingPage.js';
+import VirtualPetShelterPage from './VirtualPetShelterPage.js';
 
 // responsiveFunction();
 
@@ -24,6 +27,26 @@ closeButton.addEventListener('click', () => {
     aboutMeModal.style.display = "none";
 });
 
+const socialMediaModal = document.getElementById("social-media-popup");
+const socialMediaButton = document.getElementById("socialMediaBtn");
+const closeButton2 = document.getElementsByClassName("close2")[0];
+socialMediaButton.addEventListener('click', () => {
+    socialMediaModal.style.display = "block";
+});
+closeButton2.addEventListener('click', () => {
+    socialMediaModal.style.display = "none";
+});
+
+const contactMeModal = document.getElementById("contact-popup");
+const contactMeButton = document.getElementById("contactBtn");
+const closeButton3 = document.getElementsByClassName("close3")[0];
+contactMeButton.addEventListener('click', () => {
+    contactMeModal.style.display = "block";
+});
+closeButton3.addEventListener('click', () => {
+    contactMeModal.style.display = "none";
+});
+
 navToPickyEaterPage();
 
 function navToPickyEaterPage() {
@@ -41,5 +64,35 @@ function navToSpaceKIDetPage() {
     spaceKidetBtn.addEventListener('click', () => {
         const app = document.querySelector('#app');
         app.innerHTML = SpaceKIDetPage();
+    });
+}
+
+navToDonutClickerPage();
+
+function navToDonutClickerPage() {
+    const donutClickerBtn = document.querySelector('.donut-clicker-btn');
+    donutClickerBtn.addEventListener('click', () => {
+        const app = document.querySelector('#app');
+        app.innerHTML = DonutClickerPage();
+    });
+}
+
+navToTrekkingPage();
+
+function navToTrekkingPage() {
+    const trekkingAppBtn = document.querySelector('.trekking-app-btn');
+    trekkingAppBtn.addEventListener('click', () => {
+        const app = document.querySelector('#app');
+        app.innerHTML = TrekkingPage();
+    });
+}
+
+navToVirtualPetShelterPage();
+
+function navToVirtualPetShelterPage() {
+    const virtualPetShelterAppBtn = document.querySelector('.virtual-pet-shelter-btn');
+    virtualPetShelterAppBtn.addEventListener('click', () => {
+        const app = document.querySelector('#app');
+        app.innerHTML = VirtualPetShelterPage();
     });
 }
