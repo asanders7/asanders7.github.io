@@ -4,7 +4,6 @@ export default function VirtualPetShelterPage() {
             <h2 class="app-title">Virtual Pet Shelter Program</h2>
         </div>
         <div class="app-description">
-            App description goes here.
         </div>
 
         <article class="virtual-pet-shelter">
@@ -12,7 +11,7 @@ export default function VirtualPetShelterPage() {
             <div>
                 <img
                     class="pet-app-image"
-                    src="images/virtual-pet-shelter-screenshot.jpg"
+                    src="images/virtual-pet-shelter-screenshot.JPG"
                     alt="virtual-pet-shelter-code-num-1"/>
             </div>
             <div class="space-image-card">
