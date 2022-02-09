@@ -358,6 +358,22 @@ article {
     margin-left: 15%;
     margin-top: 50px;
 }
+.picky-eater-app-image {
+    border: 1px solid black;
+    height: auto;
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 50px;
+    width: 60%;
+}
+.picky-eater-app-image-tall {
+    border: 1px solid black;
+    height: 600px;
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 50px;
+    width: auto;
+}
 .app-image-donut {
     border: 1px solid black;
     height: 550px;
