@@ -9,9 +9,10 @@
 .nav-bar {
     background-color: #333;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
     width: 98.9%;
+    height: 6.15%;
 }
 #aboutMeBtn,
 #socialMediaBtn,
@@ -35,7 +36,6 @@
     text-align: center;
 }
 #aboutMeBtn:hover,
-#projectBtn:hover,
 #contactBtn:hover,
 #socialMediaBtn:hover,
 #project-dropdown-button:hover,
@@ -47,12 +47,11 @@
     color: rgb(223, 76, 161);
 }
 .project-dropdown-menu {
-    /* position: relative;
-    display: inline-block; */
+    display: inline-block;
     /* border: none; */
     float: right;
     margin-right: 5%;
-    /* overflow: hidden; */
+    position: relative;
 }
 .project-dropdown-menu #project-dropdown-button {
     border: none;
@@ -62,10 +61,10 @@
 }
 .project-dropdown-content {
     display: none;
-    /* position:absolute; */
+    /* position: relative; */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    /* z-index: 1; */
 }
 .picky-eater-btn,
 .space-kidet-btn,
