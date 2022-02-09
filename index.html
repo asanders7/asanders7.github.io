@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <title>Alicia's Portfolio</title>
 </head>
 <body>
+    <nav class="nav-bar" id="myNav">
+        <button id="aboutMeBtn">About Me</button>
+        <div class="project-dropdown-menu">
+            <button id="project-dropdown-button">Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="project-dropdown-content">
+                <button class="picky-eater-btn">Picky Eater</button>
+                <button class="space-kidet-btn">Space KIDet</button>
+                <button class="trekking-app-btn">Trekking App</button>
+                <button class="donut-clicker-btn">Donut Clicker</button>
+                <button class="virtual-pet-shelter-btn">Virtual Pet Shelter</button>
+            </div>
+        </div>
+        <button id="socialMediaBtn">Social Media</button>
+        <button id ="contactBtn">Contact</button>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="responsiveFunction()">&#9776;</a> -->
+    </nav>
     <div class="container">
         <header>
             <h1 class="main-title">Alicia Sanders</h1>
         </header>
-        <nav class="nav-bar">
-            <a href="#about-me-section"><button>About Me</button></a>
-            <a href="#project-section"><button>Projects</button></a>
-            <a href="#contact-section"><button>Contact</button></a>
-        </nav>
         <main>
-            <section id="about-me-section">
-                <h2 class="about-me">About Me</h2>
-                <div class="grid-container">
-                    <div class="photo">
-                        <img
-                            class="alicia-photo"
-                            src="images\Alicia Photo.jpg"
-                            alt="alicia"
-                        />
-                    </div>
-                    <div class="about-me-paragraph">
-                        <p>Welcome. I have always had a passion for helping people and for working with computers.
-                        My passion for people led me to pursue a Bachelor's degree in Psychology from The Ohio State University.
-                        After graduation, I developed an interest in coding and ended up completing courses in Software Development.
-                        Most recently, I joined the We Can Code IT coding bootcamp. This program teaches both
-                        back-end and front-end development using IntelliJ and Visual Studio Code as the main environments.
-                        The coding languages that the program focuses on are Java, HTML, CSS, and JavaScript. I find coding to be
-                        very rewarding since it gives me the ability to create programs that have the potential to make the lives
-                        of other people easier. I am excited to start a career in Software Development.</p>
-                    </div>
+            <div class="grid-container">
+                <div class="photo">
+                    <img
+                        class="alicia-photo"
+                        src="images\Alicia Photo.jpg"
+                        alt="alicia"
+                    />
                 </div>
                 <div class="skills-block">
                     <h3 class="skills-list">Technical Skills</h5>
@@ -61,81 +61,33 @@
                         <li>&bull;GitBash</li>
                     </ul>
                 </div>
-            </section>
-            <section id="project-section">
-                <h2 class="projects">Projects</h2>
-                <div class="grid-container-3">
-                    <article class="virtual-pet">
-                        <h3 class="vpp-title">Virtual Pet Project</h3>
-                        <a href="https://github.com/2021-Spring-Part-Time/virtual-pet-asanders7.git">See code on GitHub</a>
-                        <h4 class="skills-tech-header">Skills/Technologies Used:</h4>
-                        <ul>
-                            <li>Java</li>
-                            <li>IntelliJ IDE</li>
-                            <li>Git & Gitbash</li>
-                            <li>While loop</li>
-                            <li>Instance variables</li>
-                            <li>Constructors</li>
-                            <li>Operators & Expressions</li>
-                            <li>Methods</li>
-                            <li>Conditionals (if/else statements)</li>
-                            <li>Asking user for input</li>
-                            <li>Displaying output to the console</li>
-                        </ul>
-                    </article>
-                    <div class="vp-screenshot">
-                        <img class="virtual-pet-photo" src="images\virtual-pet-screenshot.JPG" alt="virtual-pet-screenshot">
+            </div>
+            <div id="about-me-paragraph" class="about-me-popup">
+                <span class="close">&times;</span>
+                <p>Welcome. I have always had a passion for helping people and for working with computers.
+                    My passion for people led me to pursue a Bachelor's degree in Psychology from The Ohio State University.
+                    After graduation, I developed an interest in coding and ended up completing courses in Software Development.
+                    Most recently, I joined the We Can Code IT coding bootcamp. This program teaches both
+                    back-end and front-end development using IntelliJ and Visual Studio Code as the main environments.
+                    The coding languages that the program focuses on are Java, HTML, CSS, and JavaScript. I find coding to be
+                    very rewarding since it gives me the ability to create programs that have the potential to make the lives
+                    of other people easier. I am excited to start a career in Software Development.</p>
+            </div>
+            <div id="social-media-popup" class="social-media-popup">
+                <span class="close2">&times;</span>
+                    <h3 class="social-media-header">Social Media</h4>
+                    <div class="grid-container-5">
+                        <p><img class="github-icon" src="images\github-icon.png" alt="github"><a href="https://github.com/asanders7">GitHub</a></p>
+                        <p><img class="linkedin-icon" src="images\linkedin-icon.png" alt="linkedin"><a href="https://www.linkedin.com/in/alicia-sanders7">LinkedIn</a></p>
                     </div>
-                    <article class="virtual-pet-shelter">
-                        <h3 class="vps-title">Virtual Pet Shelter Project</h3>
-                        <a href="https://github.com/2021-Spring-Part-Time/virtual-pet-shelter-asanders7.git">See code on GitHub</a>
-                        <h4 class="skills-tech-2">Skills/Technologies Used:</h4>
-                        <ul>
-                            <li>Java</li>
-                            <li>IntelliJ IDE</li>
-                            <li>Git & Gitbash</li>
-                            <li>Collections</li>
-                            <li>Maps</li>
-                            <li>While loop</li>
-                            <li>Instance variables</li>
-                            <li>Constructors</li>
-                            <li>Operators & Expressions</li>
-                            <li>Methods</li>
-                            <li>Conditionals (if/else statements)</li>
-                            <li>Asking user for input</li>
-                            <li>Displaying output to the console</li>
-                            <li>Test Driven Development</li>
-                        </ul>
-                    </article>
-                    <div class="vps-screenshot">
-                        <img class="virtual-pet-shelter-photo" src="images\virtual-pet-shelter-screenshot.JPG" alt="virtual-pet-shelter-screenshot">
-                    </div>
-                    <article class="virtual-pets-amok">
-                        <h3 class="vpa-title">Virtual Pets Amok Project</h3>
-                        <a href="https://github.com/2021-Spring-Part-Time/virtual-pets-amok-asanders7.git">See code on GitHub</a>
-                        <h4 class="skills-tech-3">Skills/Technologies Used:</h4>
-                        <ul>
-                            <li>Java</li>
-                            <li>IntelliJ IDE</li>
-                            <li>Git & Gitbash</li>
-                            <li>Object Oriented Programming</li>
-                            <li>Maps</li>
-                            <li>While loop</li>
-                            <li>Instance variables</li>
-                            <li>Constructors</li>
-                            <li>Operators & Expressions</li>
-                            <li>Methods</li>
-                            <li>Conditionals (if/else statements)</li>
-                            <li>Asking user for input</li>
-                            <li>Displaying output to the console</li>
-                            <li>Test Driven Development</li>
-                        </ul>
-                    </article>
-                    <div>
-                        <img class="virtual-pets-amok-photo" src="images\virtual-pets-amok-screenshot.JPG" alt="virtual-pets-amok-screenshot">
-                    </div>
-                </div>
-            </section>
+            </div>
+            <div id="contact-popup" class="contact-me-popup">
+                <span class="close3">&times;</span>
+                    <h3 class="contact-me-header">Contact Me</h4>
+                        <p><img class="cell-phone" src="images\smartphone.png" alt="phone"> <a href="tel:+1(937) 607-5828">(937) 607-5828</a></p>
+                        <p><img class="mail" src="images\closed-envelope.png" alt="envelope"> <a href="mailto:alicia.sanders88@hotmail.com">alicia.sanders88@hotmail.com</a></p>
+            </div>
+            <div id="app"></div>
             <section id="contact-section">
                 <div class="grid-container-4">
                     <div class="contact-block">
@@ -157,5 +109,6 @@
             <small>Alicia Sanders 2021</small>
         </footer>
     </div>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
