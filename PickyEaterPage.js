@@ -12,7 +12,7 @@ export default function PickyEaterPage() {
         </div>
             <img
                 class="app-image"
-                src="images/picky-eater-code-1.jpg"
+                src="images\picky-eater-code-1.jpg"
                 alt="picky-eater-code-num-1"/>
         <img
                 class="app-image"
@@ -26,7 +26,6 @@ export default function PickyEaterPage() {
                 class="app-image"
                 src="images/picky-eater-app-1.jpg"
                 alt="picky-eater-app-num-1"/>
-            <p class="app-description">This is what the user sees as soon as the app is opened.</p>
             <img
                 class="app-image"
                 src="images/picky-eater-app-2.jpg"
