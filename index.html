@@ -4,111 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css"/>
+    <script type="module" src="./index.js"></script>
     <title>Alicia's Portfolio</title>
 </head>
 <body>
-    <nav class="nav-bar" id="myNav">
-        <button id="aboutMeBtn">About Me</button>
-        <div class="project-dropdown-menu">
-            <button id="project-dropdown-button">Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="project-dropdown-content">
-                <button class="picky-eater-btn">Picky Eater</button>
-                <button class="space-kidet-btn">Space KIDet</button>
-                <button class="trekking-app-btn">Trekking App</button>
-                <button class="donut-clicker-btn">Donut Clicker</button>
-                <button class="virtual-pet-shelter-btn">Virtual Pet Shelter</button>
+    <nav class="nav-bar">
+        <div class="my-name">Alicia Sanders</div>
+        <a href="#" class="burger-menu"><i class="fa fa-bars"></i></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html" id="homeBtn">Home</a></li>
+                <li><a href="#" id="aboutMeBtn">About Me</a></li>
+                <li><a href="#" id="socialMediaBtn">Social Media</a></li>
+                <li><a href="#" id ="contactBtn">Contact</a></li>
+                <li><a href="#" id="project-dropdown-button"><i class="fa fa-caret-down"></i>Projects</a>
+                    <div class="project-dropdown-links">
+                        <ul>
+                            <li><a href="#" class="picky-eater-btn">Picky Eater</a></li>
+                            <li><a href="#" class="space-kidet-btn">Space KIDet</a></li>
+                            <li><a href="#" class="trekking-app-btn">Trekking App</a></li>
+                            <li><a href="#" class="donut-clicker-btn">Donut Clicker</a></li>
+                            <li><a href="#" class="virtual-pet-shelter-btn">Virtual Pet Shelter</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="about-me-paragraph" class="about-me-popup">
+        <span class="close">&times;</span>
+        <p class="about-me-class">Welcome. I have always had a passion for helping people and for working with computers.
+            My passion for people led me to pursue a Bachelor's degree in Psychology from The Ohio State University.
+            After graduation, I developed an interest in coding and decided to join a full-stack Software Development bootcamp
+            called We Can Code IT. I graduated from the bootcamp in September 2021 and now hold a Certificate of
+            Software Development. I find coding to be very rewarding since it gives me the ability to create programs that
+            have the potential to make the lives of other people easier.</p>
+    </div>
+    <div id="social-media-popup" class="social-media-popup">
+        <span class="close2">&times;</span>
+            <h3 class="social-media-header">Social Media</h3>
+            <div class="grid-container-5">
+                <p><img class="github-icon" src="images\github-icon.png" alt="github"/><a href="https://github.com/asanders7">GitHub</a></p>
+                <p><img class="linkedin-icon" src="images\linkedin-icon.png" alt="linkedin"/><a href="https://www.linkedin.com/in/alicia-sanders7">LinkedIn</a></p>
+            </div>
+    </div>
+    <div id="contact-popup" class="contact-me-popup">
+        <span class="close3">&times;</span>
+            <h3 class="contact-me-header">Contact Me</h3>
+            <div class="grid-container-4">
+                <p><img class="cell-phone" src="images\smartphone.png" alt="phone"/> <a href="tel:+1(937) 607-5828">(937) 607-5828</a></p>
+                <p><img class="mail" src="images\closed-envelope.png" alt="envelope"/> <a href="mailto:alicia.sanders88@hotmail.com">alicia.sanders88@hotmail.com</a></p>
+            </div>
+    </div>
+    <div id="app">
+        <div class="grid-container">
+            <div class="photo">
+                <img
+                    class="alicia-photo"
+                    src="images\Alicia Photo.jpg"
+                    alt="alicia"
+                />
+            </div>
+            <div class="skills-block">
+                <h3 class="skills-title">Technical Skills</h3>
+                <ul class="skills-list-info">
+                    <li>&bull;Java</li>
+                    <li>&bull;HTML</li>
+                    <li>&bull;CSS</li>
+                    <li>&bull;Spring</li>
+                    <li>&bull;Thymeleaf</li>
+                    <li>&bull;JavaScript</li>
+                    <li>&bull;MVC</li>
+                    <li>&bull;Agile (Scrum)</li>
+                    <li>&bull;Object Oriented Programming (OOP)</li>
+                    <li>&bull;TDD</li>
+                    <li>&bull;REST APIs</li>
+                    <li>&bull;Responsive Design / Mobile</li>
+                    <li>&bull;Relational Databases</li>
+                    <li>&bull;Source Control / GitHub</li>
+                    <li>&bull;JSON</li>
+                    <li>&bull;React</li>
+                    <li>&bull;GitBash</li>
+                </ul>
             </div>
         </div>
-        <button id="socialMediaBtn">Social Media</button>
-        <button id ="contactBtn">Contact</button>
-        <!-- <a href="javascript:void(0);" class="icon" onclick="responsiveFunction()">&#9776;</a> -->
-    </nav>
-    <div class="container">
-        <header>
-            <h1 class="main-title">Alicia Sanders</h1>
-        </header>
-        <main>
-            <div class="grid-container">
-                <div class="photo">
-                    <img
-                        class="alicia-photo"
-                        src="images\Alicia Photo.jpg"
-                        alt="alicia"
-                    />
+
+        <section id="contact-section">
+            <div class="grid-container-4">
+                <div class="contact-block">
+                    <h3 class="contact-info-header">Contact Information</h3>
+                    <p><img class="cell-phone" src="images\smartphone.png" alt="phone"/> <a href="tel:+1(937) 607-5828">(937) 607-5828</a></p>
+                    <p><img class="mail" src="images\closed-envelope.png" alt="envelope"/> <a href="mailto:alicia.sanders88@hotmail.com">alicia.sanders88@hotmail.com</a></p>
                 </div>
-                <div class="skills-block">
-                    <h3 class="skills-list">Technical Skills</h5>
-                    <ul class="skills-list-info">
-                        <li>&bull;Java</li>
-                        <li>&bull;HTML</li>
-                        <li>&bull;CSS</li>
-                        <li>&bull;Spring</li>
-                        <li>&bull;Thymeleaf</li>
-                        <li>&bull;JavaScript</li>
-                        <li>&bull;MVC</li>
-                        <li>&bull;Agile (Scrum)</li>
-                        <li>&bull;Object Oriented Programming (OOP)</li>
-                        <li>&bull;TDD</li>
-                        <li>&bull;REST APIs</li>
-                        <li>&bull;Responsive Design / Mobile</li>
-                        <li>&bull;Relational Databases</li>
-                        <li>&bull;Source Control / GitHub</li>
-                        <li>&bull;JSON</li>
-                        <li>&bull;React</li>
-                        <li>&bull;GitBash</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="about-me-paragraph" class="about-me-popup">
-                <span class="close">&times;</span>
-                <p>Welcome. I have always had a passion for helping people and for working with computers.
-                    My passion for people led me to pursue a Bachelor's degree in Psychology from The Ohio State University.
-                    After graduation, I developed an interest in coding and ended up completing courses in Software Development.
-                    Most recently, I joined the We Can Code IT coding bootcamp. This program teaches both
-                    back-end and front-end development using IntelliJ and Visual Studio Code as the main environments.
-                    The coding languages that the program focuses on are Java, HTML, CSS, and JavaScript. I find coding to be
-                    very rewarding since it gives me the ability to create programs that have the potential to make the lives
-                    of other people easier. I am excited to start a career in Software Development.</p>
-            </div>
-            <div id="social-media-popup" class="social-media-popup">
-                <span class="close2">&times;</span>
-                    <h3 class="social-media-header">Social Media</h4>
+                <div class="social-media-block">
+                    <h3 class="social-media-header">Social Media</h3>
                     <div class="grid-container-5">
-                        <p><img class="github-icon" src="images\github-icon.png" alt="github"><a href="https://github.com/asanders7">GitHub</a></p>
-                        <p><img class="linkedin-icon" src="images\linkedin-icon.png" alt="linkedin"><a href="https://www.linkedin.com/in/alicia-sanders7">LinkedIn</a></p>
-                    </div>
-            </div>
-            <div id="contact-popup" class="contact-me-popup">
-                <span class="close3">&times;</span>
-                    <h3 class="contact-me-header">Contact Me</h4>
-                        <p><img class="cell-phone" src="images\smartphone.png" alt="phone"> <a href="tel:+1(937) 607-5828">(937) 607-5828</a></p>
-                        <p><img class="mail" src="images\closed-envelope.png" alt="envelope"> <a href="mailto:alicia.sanders88@hotmail.com">alicia.sanders88@hotmail.com</a></p>
-            </div>
-            <div id="app"></div>
-            <section id="contact-section">
-                <div class="grid-container-4">
-                    <div class="contact-block">
-                        <h3 class="contact-info-header">Contact Information</h3>
-                        <p><img class="cell-phone" src="images\smartphone.png" alt="phone"> <a href="tel:+1(937) 607-5828">(937) 607-5828</a></p>
-                        <p><img class="mail" src="images\closed-envelope.png" alt="envelope"> <a href="mailto:alicia.sanders88@hotmail.com">alicia.sanders88@hotmail.com</a></p>
-                    </div>
-                    <div class="social-media-block">
-                        <h3 class="social-media-header">Social Media</h4>
-                        <div class="grid-container-5">
-                            <p><img class="github-icon" src="images\github-icon.png" alt="github"><a href="https://github.com/asanders7">GitHub</a></p>
-                            <p><img class="linkedin-icon" src="images\linkedin-icon.png" alt="linkedin"><a href="https://www.linkedin.com/in/alicia-sanders7">LinkedIn</a></p>
-                        </div>
+                        <p><img class="github-icon" src="images\github-icon.png" alt="github"/><a href="https://github.com/asanders7">GitHub</a></p>
+                        <p><img class="linkedin-icon" src="images\linkedin-icon.png" alt="linkedin"/><a href="https://www.linkedin.com/in/alicia-sanders7">LinkedIn</a></p>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
         <footer>
             <small>Alicia Sanders 2021</small>
         </footer>
     </div>
-    <script type="module" src="./index.js"></script>
+
 </body>
 </html>

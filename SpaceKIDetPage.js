@@ -5,7 +5,7 @@ export default function SpaceKIDetPage() {
         </div>
         <div class="app-description">
         </div>
-        <div class="grid-container-for-image-cards">
+        <div class="grid-container-for-space-image-cards">
             <div class="space-image-card">
                 <img
                     class="app-image-space-1"
