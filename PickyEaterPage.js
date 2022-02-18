@@ -1,8 +1,8 @@
 export default function PickyEaterPage() {
     return `
-        <div class="app-header">
-            <h2 class="app-title">Picky Eater App</h2>
-        </div>
+    <div class="app-header">
+        <h2 class="app-title">Picky Eater App</h2>
+    </div>
         <div class="app-description">
             This app allows parents of picky eaters to create profiles
             for their children where they can keep track of the types of
@@ -78,5 +78,8 @@ export default function PickyEaterPage() {
                 class="picky-eater-app-image"
                 src="images/picky-eater-code-3.JPG"
                 alt="picky-eater-app-num-3"/>
+    <footer>
+        <small>Alicia Sanders 2021</small>
+    </footer>
     `;
 }

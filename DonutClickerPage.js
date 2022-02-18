@@ -5,7 +5,7 @@ export default function DonutClickerPage() {
         </div>
         <div class="app-description">
         </div>
-            <div class="grid-container-for-image-cards">
+            <div class="grid-container-for-donut-image-cards">
                 <div class="image-card">
                     <img
                         class="app-image-donut"

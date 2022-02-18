@@ -6,7 +6,6 @@ export default function VirtualPetShelterPage() {
         <div class="app-description">
         </div>
 
-        <article class="virtual-pet-shelter">
         <div class="grid-container-3">
             <div>
                 <img
@@ -35,6 +34,5 @@ export default function VirtualPetShelterPage() {
             </ul>
             </div>
             </div>
-        </article>
     `;
 }
